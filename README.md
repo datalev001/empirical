@@ -1,1 +1,5 @@
-# empirical
+# Empirical Likelihood and Transformation for Adaptive Data Modeling: Beyond ARMA
+A Non-Parametric Approach for Robust Forecasting and Data Analysis Across Domains
+The ARMA model is a popular choice for time series forecasting because it captures how data points are related over time - like how today's data depends on yesterday's. But ARMA assumes that the residuals follow a specific (usually normal) distribution. In real-world data, this assumption often doesn't hold up. Outliers, sudden shifts, and unusual patterns can mess with the model, making forecasts less accurate or unstable.
+From my research, I believe that empirical techniques offer a solution. They're flexible, non-parametric, and adapt directly to the data without needing strict distribution assumptions. Instead of forcing data into a set framework, they use the actual observed values to build the model, making it effective at handling outliers and complex patterns that traditional models might miss.
+Combining empirical transformation and likelihood estimation with ARMA leads to a more reliable forecasting model. ARMA captures time-based relationships, while empirical likelihood helps manage irregularities. Instead of assuming a specific residual distribution, empirical likelihood lets the model adapt to real-world data, improving forecast accuracy.
