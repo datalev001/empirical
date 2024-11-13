@@ -2,11 +2,8 @@ import numpy as np
 from scipy.optimize import minimize
 from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error, mean_absolute_error
 from statsmodels.tsa.arima.model import ARIMA
-
-
-import numpy as np
 import pandas as pd
-from scipy.optimize import minimize
+from scipy.stats import rankdata
 
 #####################Empirical Distribution and Likelihood Example##################################
 # Set random seed for reproducibility
@@ -204,11 +201,6 @@ print(f"MAPE: {evaluation_arma['MAPE']:.4f}, RMSE: {evaluation_arma['RMSE']:.4f}
 #####apply ARMA on transformation EMP without EMP likelihood#########
 
 ##########several back testing with EMP transformation only##############
-import numpy as np
-import pandas as pd
-from scipy.stats import rankdata
-from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error, mean_absolute_error
-from statsmodels.tsa.arima.model import ARIMA
 
 # Load and preprocess data
 def load_data(file_path):
@@ -346,11 +338,6 @@ results = backtest_empirical_and_standard_arma(file_path, order=(1, 0, 1), forec
 #######EMP likelihood on log transform raw and transfor back##############
 ###########################################################################
 
-import numpy as np
-import pandas as pd
-from scipy.optimize import minimize
-from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error, mean_absolute_error
-from statsmodels.tsa.arima.model import ARIMA
 
 # Load and preprocess data
 def load_data(file_path):
